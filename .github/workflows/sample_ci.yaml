@@ -8,3 +8,7 @@ jobs:
     steps:
       - name: "Sample"
         run: echo ${{ secrets.SIGNING_KEY_BASE64_FOR_BUNDLE　}}
+  
+
+      - name: "Sample2"
+        run: echo abcdefg
