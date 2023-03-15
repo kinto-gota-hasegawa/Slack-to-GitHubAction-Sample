@@ -1,0 +1,10 @@
+name: sample ci
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on:ubuntu-latest
+    steps:
+      - name: sample
+        run echo ${{ secrets.SIGNING_KEY_BASE64_FOR_BUNDLE }}
