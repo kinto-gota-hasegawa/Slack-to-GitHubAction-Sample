@@ -12,3 +12,6 @@ jobs:
 
       - name: "Sample2"
         run: echo abcdefg
+
+      - name: "Sample3"
+        run: echo ${{ secrets.SIGNING_KEY_BASE64_FOR_BUNDLE }} | wc -m
